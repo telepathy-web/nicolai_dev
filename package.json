@@ -1,0 +1,25 @@
+{
+  "name": "telepathy-environment-2024",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.12",
+    "sass": "^1.79.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "vite-plugin-sass-glob-import": "^4.1.0",
+    "vite-plugin-typescript": "^1.0.4"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "animejs": "^3.2.2",
+    "glob": "^11.0.0",
+    "vite-plugin-ejs": "^1.7.0"
+  }
+}

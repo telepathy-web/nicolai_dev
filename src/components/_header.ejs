@@ -1,0 +1,35 @@
+<% if(typeof pageTitle=='undefined' ) var pageTitle='サイトタイトル' ; -%>
+<% if(typeof description=='undefined' ) var description='ディスクリプションテキストが入ります。' ; -%>
+<% if(typeof ogpDescription=='undefined' ) var ogpDescription=description; -%>
+<% if(typeof pageUrl=='undefined' ) var pageUrl="telepathy.jp" ; -%>
+<% if(typeof ogpimg=='undefined' ) var ogpimg="https://telepathy.jp" ; -%>
+<% if(typeof keywords=='undefined' ) var keywords="" ; -%>
+<% if(typeof pageclass=='undefined' ) var pageclass="" ; -%>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title><%= pageTitle %></title>
+  <meta name="description" content="<%= description %>">
+  <meta property="og:title" content="<%= pageTitle %>">
+  <meta property="og:description" content="<%= ogpDescription %>">
+  <meta property="og:image" content="<%= ogpimg %>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="<%= pageUrl %>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="<%= keywords %>">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/css/style.scss">
+  <script type="module" src="/assets/js/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="<%= pageclass %>">
+  <header class="header_block"></header>
