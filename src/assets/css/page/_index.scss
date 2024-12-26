@@ -1,4 +1,275 @@
 @use "../common/module" as *;
 @use '../common/config' as *;
 
-.index_page {}
+
+    .guide_map_block {
+        background: url('/assets/img/top/bg_guide-map.webp');
+        margin: 240px 0 0 0;
+        @include sp {
+            margin: calc(150 / #{$device_sp} * 100vw) 0 0 0;
+        }
+        &__inner {
+            max-width: 1381px;
+            margin: 0 auto;
+            padding: 145px 20px 145px;
+            box-sizing: content-box;
+            @include sp {
+                padding: calc(80 / #{$device_sp} * 100vw) 20px calc(120 / #{$device_sp} * 100vw);
+                overflow: hidden;
+            }
+        }
+
+        &__title {
+            color: #4E5A32;
+            font-family: Cardo;
+            font-size: 3.2847rem;
+            line-height: 4.0625rem;
+            font-weight: 400;
+            @include sp {
+                color: #4E5A32;
+                font-family: Cardo;
+                font-size: 52.556px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 65px; /* 123.679% */
+            }
+            @media (max-width: 350px) {
+                font-size: calc(52 / 350 * 100vw);
+            }
+            @media (max-width: 321px) {
+                font-size: calc(45 / 321 * 100vw);
+            }
+        }
+
+        &__sub_title {
+            display: block;
+            color: #4E5A32;
+            font-family: Cardo;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            margin-top: 21px;
+            @include sp {
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+            }
+        }
+
+        &__lead {
+            color: #4E5A32;
+            font-family: "Zen Old Mincho";
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            margin-top: 26px;
+            @include sp {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        &__instagram {
+            color: #4E5A32;
+            font-family: "Zen Old Mincho";
+            font-size: 0.9375rem;
+            line-height: 1.5rem;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            @include sp {
+                font-size: 0.9375rem;
+                line-height: 1.5rem;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('/assets/img/top/ico_insragram.svg') center no-repeat;
+                width: 21px;
+                height: 21px;
+            }
+        }
+
+        &__img {
+            width: calc(1168 / #{$device_pc} * 100vw);
+            max-width: 1168px;
+            margin: calc(-208 / 1440 * 100vw) 0 0 calc(175 / 1440 * 100vw);
+            @media (max-width: 1300px) {
+                margin: auto;
+                width: calc(1168 / 1300* 100vw);
+            }
+
+            @media (min-width: 1600px) {
+                margin: -230px 0 0 195px;
+                width: calc(1168 / 1300* 100vw);
+            }
+
+            @include sp {
+                margin-top: calc(42 / #{$device_sp} * 100vw);
+                width: calc(468 / #{$device_sp} * 100vw);
+                overflow: hidden;
+                margin: 42px calc(41% - 50vw);
+                padding: 0 calc(46vw - 50%);
+            }
+
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__picnic {
+            color: #000;
+            font-family: "Zen Old Mincho";
+            font-size: 1rem;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-top: -60px;
+            @media (max-width: 1300px) {
+                margin-top: 50px;
+            }
+            @include sp {
+                font-size: 0.8125rem;
+                line-height: 1.25rem;
+            }
+
+            &::before {
+                display: block;
+                content: '';
+                background: url('/assets/img/top/ico_picnic.svg') center no-repeat;
+                background-size: contain;
+                width: 29px;
+                height: 29px;
+                @include sp {
+                    width: calc(34 / #{$device_sp} * 100vw);
+                    height: calc(34 / #{$device_sp} * 100vw);
+                }
+            }
+        }
+
+        &__list_wrapper {
+            margin-top: 70px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 31px;
+            counter-reset: number;
+            list-style: none;
+            @media (max-width: 1300px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: calc(30 / 1300 * 100vw);
+            }
+            @include sp {
+                grid-template-columns: repeat(2, 1fr);
+                gap: calc(30 / #{$device_sp} * 100vw);
+            }
+        }
+
+        &__item_title {
+            color: #4E5A32;
+            font-family: Cardo;
+            font-size: 1.0625rem;
+            line-height: 1.2694rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            @include sp {
+                font-size: .7rem;
+                line-height: 1.25rem;
+                align-items: center;
+                gap: calc(10 / #{$device_sp} * 100vw);
+            }
+            @media (max-width: 768px) {
+                font-size: calc(22 / 768 * 100vw);
+                gap: calc(10 / 768 * 100vw);
+            }
+            @media (max-width: 524px) {
+                gap: calc(9 / 485 * 100vw);
+                font-size: calc(15 / 524 * 100vw);
+            }
+            @media (max-width: 485px) {
+                gap: calc(8 / 485 * 100vw);
+                font-size: calc(14 / 485 * 100vw);
+            }
+            @media (max-width: 386px) {
+                gap: calc(7 / 386 * 100vw);
+                font-size: calc(11 / 386 * 100vw);
+            }
+
+            &::before {
+                counter-increment: number;
+                content: counter(number) " ";
+                display: flex;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+                background: #7C8870;
+                width: 26px;
+                height: 25px;
+                @include sp {
+                    width: calc(20 / #{$device_sp} * 100vw);
+                    height: calc(21 / #{$device_sp} * 100vw);
+                }
+            }
+
+            &--picnic {
+                &::after {
+                    display: block;
+                    content: '';
+                    background: url("/assets/img/top/ico_picnic.svg") center no-repeat;
+                    background-size: contain;
+                    width: 26px;
+                    height: 25px;
+
+                    @media (max-width: 768px) {
+                        width: calc(21 / 768 * 100vw);
+                        height: calc(21 / 768 * 100vw);
+                    }
+                    @media (max-width: 485px) {
+                        width: calc(21 / 485 * 100vw);
+                        height: calc(21 / 485 * 100vw);
+                    }
+                    @include sp {
+                        width: calc(21 / #{$device_sp} * 100vw);
+                        height: calc(21 / #{$device_sp} * 100vw);
+                    }
+
+                }
+    
+            }
+        }
+
+        &__item_description {
+            color: #4E5A32;
+            font-family: "Zen Old Mincho";
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            margin-top: 8px;
+            @include sp {
+                text-align: justify;
+                font-size: 0.75rem;
+                line-height: 170%; 
+                margin-top: calc(10 / #{$device_sp} * 100vw);
+            }
+        }
+
+        .is-pc {
+            display: block;
+          
+            @include sp {
+              display: none;
+            }
+          }
+          
+          .is-sp {
+            display: none;
+          
+            @include sp {
+              display: block;
+            }
+          }
+    }

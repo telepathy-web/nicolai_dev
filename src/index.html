@@ -1,10 +1,107 @@
 <% var pageclass='index_page' ; %>
 <%- include('./components/_header.ejs', { pageclass: pageclass }) %>
 <%- include('./components/_header.ejs') %>
-<div class="container">
-  <h1>Home Page</h1>
-  <p>Welcome to the home page</p>
-  <img src="/assets/img/top/TOP.jpg" alt="">
 
+<div class="guide_map_block">
+  <div class="guide_map_block__inner">
+      <h3 class="guide_map_block__title">GUIDE MAP</h3>
+      <span class="guide_map_block__sub_title"> 園内 ガイド マップ</span>
+      <p class="guide_map_block__lead">公式インスタグラムでは、季節ごとに変わる園内の自然や、<br  class="is-pc">
+          箱根 ガーデンズだけの特別なイベント、キャンペーン情報を随時更新。<br>
+          ぜひフォローの上、ハッシュタグ・タグ付けをして素敵な写真を投稿してください。
+      </p>
+      <p class="guide_map_block__instagram">@nicolaibergmann_hakonegardens</p>
+      <div class="guide_map_block__img">
+        <picture>
+          <source media="(max-width: 769px)" srcset="./assets/img/top/guide_map_sp.webp">
+          <img src="./assets/img/top/guide_map.webp" alt="園内ガイドマップ">
+        </picture>
+      </div>
+      <p class="guide_map_block__picnic">
+        おすすめピクニックスポット
+      </p>
+      <div class="guide_map_block__list_wrapper">
+        <ul class="guide_map_block__list">
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Welcome Pavilion</h4>
+                    <p class="guide_map_block__item_description">季節に合わせた花々やプランター、そしてオブジェが飾られたウェルカムパビリオンです。ここから、大自然とのつながりをぜひ感じてください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Main Street</h4>
+                    <p class="guide_map_block__item_description">広大な園内を繋ぐ大自然の道です。訪れる度に変わる季節の花々やオブジェ、鳥の囀りや自然の香りを味わいながらゆっくりと歩いてみてください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title guide_map_block__item_title--picnic">Market Place</h4>
+                    <p class="guide_map_block__item_description">園内の真ん中に位置するこの場所では、ピクニック気分を味わえるような素敵な空間が広がっています。 また、季節に応じてイベントも開催されます。ぜひ足を運んでみてください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">West Walk </h4>
+                    <p class="guide_map_block__item_description">Valley View Pavilionが位置する道で、箱根の自然が感じられる場所です。季節に合わせて鉢物を並べています。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title guide_map_block__item_title--picnic">Valley View Pavilion</h4>
+                    <p class="guide_map_block__item_description">箱根 ガーデンズで最も標高の高い場所に位置するパビリオンで、ウッドデッキに立つと心地よい風に包まれます。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title guide_map_block__item_title--picnic">Grand View Terrace</h4>
+                    <p class="guide_map_block__item_description">目の前に広がる渓谷を眺めながら、木々が擦り合う自然のサウンドをお楽しみいただけるテラスです。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Grand View</h4>
+                    <p class="guide_map_block__item_description">箱根の大自然を一望できるエリアです。道辺に並ぶ珍しい品種の紫陽花に囲まれながら心地よい風を感じてみてください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Forest Pavilion</h4>
+                    <p class="guide_map_block__item_description">箱根 ガーデンズの木々に最も囲まれた小さなパビリオンです。パビリオン内に並べた丸太に座り、箱根の鳥の鳴き声や木々が擦れ合う音など普段の生活では味わえない環境をぜひ体験してください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title guide_map_block__item_title--picnic">Main Street Terrace</h4>
+                    <p class="guide_map_block__item_description">メインストリートに続くテラスは、園内を散策した後に小休憩をする場所として、またNOMUのフードやドリンクを気軽に持ち込んでピクニック気分を味わえます。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title guide_map_block__item_title--picnic">Cafe Pavilion</h4>
+                    <p class="guide_map_block__item_description">テイクアウトしたNOMU hakoneのフードやドリンクをゆっくりご飲食できるパビリオンです。大切に育てあげた様々な色の椿の木や季節のお花に囲まれた神秘的な雰囲気の中で、コーヒーを片手に読書をしたり、ゆっくりと木々を観察したりなど、自分らしい楽しみ方をぜひ試してみてください。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Shop Pavilion</h4>
+                    <p class="guide_map_block__item_description">ニコライ バーグマン 箱根 ガーデンズ限定のオリジナルグッズや選りすぐりのプランツを販売しています。とっておきのお土産やギフトがきっと見つかるはずです。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">NOMU hakone</h4>
+                    <p class="guide_map_block__item_description">箱根強羅で取り組む地産地消の季節の食材を自家製ライブレッドやブリオッシュを組み合わせた彩り鮮やかなスモーブローや、オーガニックコーヒーやオリジナルの緑茶レモネード、有機フルーツジュース、クラフトビールなど、NOMUならではのニークなメニューを季節毎に味わっていただけます。</p>
+                </section>
+            </li>
+            <li class="guide_map_block__item">
+                <section class="guide_map_block__item_inner">
+                    <h4 class="guide_map_block__item_title">Ajisai Street</h4>
+                    <p class="guide_map_block__item_description">エントランスから続く800本以上の紫陽花は、毎年7月頃に蕾が膨らみ、8月は満開になり紫やピンク、水色の花で一面が覆われます。9月には、秋色の紫陽花へと花の色が移り変わり、長い間お楽しみいただけます。毎年少しずつ増えていく紫陽花は、フラワースクールで使用した残りの株を植えて丁寧に育てています。</p>
+                </section>
+            </li>
+        </ul>
+    </div>
+  </div>
 </div>
 <%- include('./components/_footer.ejs') %>
